@@ -11,7 +11,6 @@ jobs:
     name: Detect binary files and update .gitattributes
     runs-on: ubuntu-latest
     steps:
-      # If this run was triggered by the bot itself, skip the rest to avoid loops.
       - name: Exit when run by GitHub Actions bot
         if: ${{ github.actor == 'github-actions[bot]' }}
         run: |
@@ -36,23 +35,24 @@ jobs:
           TMP_NEW="$(mktemp)"
           # Preserve existing .gitattributes but remove any lines that start with file/
           if [ -f "${EXISTING}" ]; then
-            # remove lines that begin with "file/" (allow leading whitespace)
             grep -vE '^[[:space:]]*file\/' "${EXISTING}" > "${TMP_BASE}" || true
           else
             touch "${TMP_BASE}"
           fi
-          # Find tracked files under file/ and emit per-file LFS lines for non-text files
-          # If no tracked files under file/ exist, git ls-files -z will exit non-zero; handle gracefully
-          git ls-files -z file || true
-          git ls-files -z file | xargs -0 -r -I{} sh -c '
-            if [ -f "{}" ]; then
-              mime=$(file --mime -b "{}" 2>/dev/null || echo "")
+          # List tracked files under "file/" (including files directly in file/)
+          # and emit per-file LFS lines for non-text files.
+          # Use a NUL-separated loop to safely handle all filenames.
+          git ls-files -z -- file || true
+          : > "${TMP_NEW}"
+          git ls-files -z -- file | while IFS= read -r -d '' f; do
+            if [ -f "$f" ]; then
+              mime=$(file --mime -b "$f" 2>/dev/null || echo "")
               # Treat as binary if mime does not start with text/ and is not empty
               if ! printf "%s" "$mime" | grep -qE "^text/|^inode/x-empty"; then
-                printf "%s filter=lfs diff=lfs merge=lfs -text\n" "{}"
+                printf "%s filter=lfs diff=lfs merge=lfs -text\n" "$f"
               fi
             fi
-          ' > "${TMP_NEW}" || true
+          done >> "${TMP_NEW}" || true
           # Merge preserved base + new binary entries
           cat "${TMP_BASE}" > "${REPO_ROOT}/.gitattributes.new"
           if [ -s "${TMP_NEW}" ]; then
@@ -62,7 +62,6 @@ jobs:
           # Remove duplicate lines while preserving first occurrence
           awk '!seen[$0]++' "${REPO_ROOT}/.gitattributes.new" > "${REPO_ROOT}/.gitattributes.final"
           mv "${REPO_ROOT}/.gitattributes.final" "${REPO_ROOT}/.gitattributes"
-          # Show diff for debugging; exit-code ignored so workflow continues
           echo "Computed .gitattributes (preview):"
           git --no-pager diff -- .gitattributes || true
       - name: Commit and push updated .gitattributes if changed
