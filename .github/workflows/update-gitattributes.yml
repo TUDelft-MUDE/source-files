@@ -20,44 +20,53 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          lfs: true
       - name: Configure git user
         if: ${{ github.actor != 'github-actions[bot]' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-      - name: Detect binary files under file/ and build new .gitattributes
+      - name: Install Git LFS
+        if: ${{ github.actor != 'github-actions[bot]' }}
+        run: |
+          git lfs install
+      - name: Detect binary file types under file/ and build new .gitattributes
         if: ${{ github.actor != 'github-actions[bot]' }}
         run: |
           set -euo pipefail
           REPO_ROOT="$(pwd)"
           EXISTING="${REPO_ROOT}/.gitattributes"
           TMP_BASE="$(mktemp)"
-          TMP_NEW="$(mktemp)"
-          # Preserve existing .gitattributes but remove any lines that start with file/
+          TMP_EXTS="$(mktemp)"
+          # Preserve existing .gitattributes but remove LFS pattern lines
           if [ -f "${EXISTING}" ]; then
-            grep -vE '^[[:space:]]*file\/' "${EXISTING}" > "${TMP_BASE}" || true
+            grep -vE 'filter=lfs diff=lfs merge=lfs' "${EXISTING}" > "${TMP_BASE}" || true
           else
             touch "${TMP_BASE}"
           fi
-          # List tracked files under "file/" (including files directly in file/)
-          # and emit per-file LFS lines for non-text files.
-          # Use a NUL-separated loop to safely handle all filenames.
-          git ls-files -z -- file || true
-          : > "${TMP_NEW}"
+          # Collect extensions of binary files under "file/"
+          : > "${TMP_EXTS}"
           git ls-files -z -- file | while IFS= read -r -d '' f; do
             if [ -f "$f" ]; then
               mime=$(file --mime -b "$f" 2>/dev/null || echo "")
               # Treat as binary if mime does not start with text/ and is not empty
               if ! printf "%s" "$mime" | grep -qE "^text/|^inode/x-empty"; then
-                printf "%s filter=lfs diff=lfs merge=lfs -text\n" "$f"
+                # Extract extension (everything after last dot, or empty if no dot)
+                ext="${f##*.}"
+                if [ "$ext" != "$f" ] && [ -n "$ext" ]; then
+                  echo "$ext"
+                fi
               fi
             fi
-          done >> "${TMP_NEW}" || true
-          # Merge preserved base + new binary entries
+          done | sort -u > "${TMP_EXTS}" || true
+          # Build new .gitattributes with extension patterns
           cat "${TMP_BASE}" > "${REPO_ROOT}/.gitattributes.new"
-          if [ -s "${TMP_NEW}" ]; then
+          if [ -s "${TMP_EXTS}" ]; then
             echo "" >> "${REPO_ROOT}/.gitattributes.new"
-            cat "${TMP_NEW}" >> "${REPO_ROOT}/.gitattributes.new"
+            echo "# Binary file types tracked with LFS" >> "${REPO_ROOT}/.gitattributes.new"
+            while IFS= read -r ext; do
+              printf "*.%s filter=lfs diff=lfs merge=lfs -text\n" "$ext"
+            done < "${TMP_EXTS}" >> "${REPO_ROOT}/.gitattributes.new"
           fi
           # Remove duplicate lines while preserving first occurrence
           awk '!seen[$0]++' "${REPO_ROOT}/.gitattributes.new" > "${REPO_ROOT}/.gitattributes.final"
@@ -69,8 +78,38 @@ jobs:
         run: |
           if git status --porcelain -- .gitattributes | grep -q .; then
             git add .gitattributes
-            git commit -m "chore: update .gitattributes for binary files under file/ (automated)"
+            git commit -m "chore: update .gitattributes for binary file types (automated)"
             git push
           else
             echo "No .gitattributes changes to commit."
+          fi
+      - name: Re-add files as LFS
+        if: ${{ github.actor != 'github-actions[bot]' }}
+        run: |
+          # Find files that should be in LFS according to .gitattributes
+          lfs_files=$(git ls-files -- file | while IFS= read -r f; do
+            if [ -f "$f" ]; then
+              mime=$(file --mime -b "$f" 2>/dev/null || echo "")
+              if ! printf "%s" "$mime" | grep -qE "^text/|^inode/x-empty"; then
+                echo "$f"
+              fi
+            fi
+          done)
+          
+          if [ -n "$lfs_files" ]; then
+            echo "Files to migrate to LFS:"
+            echo "$lfs_files"
+            
+            # Remove files from Git cache and re-add them
+            echo "$lfs_files" | xargs -r git rm --cached
+            echo "$lfs_files" | xargs -r git add
+            
+            if git status --porcelain | grep -q .; then
+              git commit -m "chore: migrate binary files to LFS (automated)"
+              git push
+            else
+              echo "Files already in LFS format."
+            fi
+          else
+            echo "No binary files to migrate to LFS."
           fi
