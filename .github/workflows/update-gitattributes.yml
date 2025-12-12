@@ -71,6 +71,8 @@ jobs:
           # Remove duplicate lines while preserving first occurrence
           awk '!seen[$0]++' "${REPO_ROOT}/.gitattributes.new" > "${REPO_ROOT}/.gitattributes.final"
           mv "${REPO_ROOT}/.gitattributes.final" "${REPO_ROOT}/.gitattributes"
+          # Clean up temp files
+          rm -f "${TMP_BASE}" "${TMP_EXTS}" "${REPO_ROOT}/.gitattributes.new"
           echo "Computed .gitattributes (preview):"
           git --no-pager diff -- .gitattributes || true
       - name: Commit and push updated .gitattributes if changed
@@ -86,23 +88,28 @@ jobs:
       - name: Re-add files as LFS
         if: ${{ github.actor != 'github-actions[bot]' }}
         run: |
+          set -euo pipefail
           # Find files that should be in LFS according to .gitattributes
-          lfs_files=$(git ls-files -- file | while IFS= read -r f; do
+          # Use a temp file to collect the list
+          TMP_FILES=$(mktemp)
+          git ls-files -z -- file | while IFS= read -r -d '' f; do
             if [ -f "$f" ]; then
               mime=$(file --mime -b "$f" 2>/dev/null || echo "")
               if ! printf "%s" "$mime" | grep -qE "^text/|^inode/x-empty"; then
-                echo "$f"
+                printf "%s\0" "$f"
               fi
             fi
-          done)
+          done > "${TMP_FILES}"
           
-          if [ -n "$lfs_files" ]; then
+          if [ -s "${TMP_FILES}" ]; then
             echo "Files to migrate to LFS:"
-            echo "$lfs_files"
+            cat "${TMP_FILES}" | xargs -0 printf "%s\n"
             
             # Remove files from Git cache and re-add them
-            echo "$lfs_files" | xargs -r git rm --cached
-            echo "$lfs_files" | xargs -r git add
+            cat "${TMP_FILES}" | xargs -0 git rm --cached --
+            cat "${TMP_FILES}" | xargs -0 git add --
+            
+            rm -f "${TMP_FILES}"
             
             if git status --porcelain | grep -q .; then
               git commit -m "chore: migrate binary files to LFS (automated)"
@@ -112,4 +119,5 @@ jobs:
             fi
           else
             echo "No binary files to migrate to LFS."
+            rm -f "${TMP_FILES}"
           fi
