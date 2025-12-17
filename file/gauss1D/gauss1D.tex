@@ -1,0 +1,30 @@
+\documentclass[10pt,border={0pt  0pt 16mm 0pt}]{standalone}
+
+\usepackage{graphicx}
+\usepackage{psfrag}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{tikzpicture}
+\psfrag{1st}{$f=b\xi+c$}
+\psfrag{2nd}{$f=a\xi^2+b\xi+c$}
+\psfrag{3rd}{$\xi^3$}
+\psfrag{0th}{$f=c$}
+\psfrag{f}[b]{$f$}
+\psfrag{func}[l]{$f(\xi)$}
+\psfrag{xi}[l]{$\xi$}
+\psfrag{zm}[t]{$-1$}
+\psfrag{xp}[t]{$1$}
+\psfrag{c}[l]{$f(xi)=c$}
+\node at (0,0) {\includegraphics{gauss1D1}};
+\node at (8,0) {\includegraphics{gauss1D3}};
+\node at (16,0) {\includegraphics{gauss1D5}};
+\node at (0,-3) {$\displaystyle\int_{-1}^1 f \,\mathrm{d}x = 2f$};
+\node at (8,-3) {$\displaystyle\int_{-1}^1 f \,\mathrm{d}x = 2f(0)$};
+\node at (16,-3) {$\displaystyle\int_{-1}^1 f \,\mathrm{d}x = f\left(-\tfrac{1}{\sqrt{3}}\right)+f\left(\tfrac{1}{\sqrt{3}}\right)$};
+\end{tikzpicture}
+
+\end{document}
