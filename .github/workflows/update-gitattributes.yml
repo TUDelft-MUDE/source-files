@@ -142,17 +142,28 @@ jobs:
           else
             echo "No .gitattributes changes to commit."
           fi
-      - name: Renormalize files for updated .gitattributes (reset only)
-        if: ${{ github.actor != 'github-actions[bot]' && github.event.inputs.reset_lfs == 'true' }}
+      - name: Renormalize files for updated .gitattributes
+        if: ${{ github.actor != 'github-actions[bot]' }}
         run: |
           set -euo pipefail
-          echo "Renormalizing files under file/ based on updated .gitattributes..."
+          if [ "${{ github.event.inputs.reset_lfs }}" = "true" ]; then
+            echo "Reset mode: renormalizing all files to move text-y files OUT of LFS..."
+          else
+            echo "Normal mode: renormalizing to move new binary types INTO LFS..."
+          fi
           git add --renormalize file/
           if git status --porcelain | grep -q .; then
             echo "Changes after renormalize:"
             git --no-pager status --porcelain
-            git commit -m "chore: renormalize files per updated .gitattributes (automated)"
+            if [ "${{ github.event.inputs.reset_lfs }}" = "true" ]; then
+              git commit -m "chore: renormalize files per updated .gitattributes (reset: move text files out of LFS)"
+            else
+              git commit -m "chore: migrate new binary files to LFS (automated)"
+            fi
             git push
+          else
+            echo "No renormalization changes detected."
+          fi
           else
             echo "No renormalization changes detected."
           fi
