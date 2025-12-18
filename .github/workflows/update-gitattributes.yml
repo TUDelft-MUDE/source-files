@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          lfs: true
+          lfs: false
       - name: Configure git user
         if: ${{ github.actor != 'github-actions[bot]' }}
         run: |
@@ -57,18 +57,28 @@ jobs:
           EXISTING="${REPO_ROOT}/.gitattributes"
           TMP_BASE="$(mktemp)"
           TMP_EXTS="$(mktemp)"
-          # Preserve existing .gitattributes but remove LFS pattern lines
-          if [ -f "${EXISTING}" ]; then
-            grep -vE 'filter=lfs diff=lfs merge=lfs' "${EXISTING}" > "${TMP_BASE}" || true
+          # Preserve existing .gitattributes
+          # Only strip LFS lines in reset mode; otherwise keep everything
+          if [ "${{ github.event.inputs.reset_lfs }}" = "true" ]; then
+            echo "Reset mode: removing old LFS patterns" >&2
+            if [ -f "${EXISTING}" ]; then
+              grep -vE 'filter=lfs diff=lfs merge=lfs' "${EXISTING}" > "${TMP_BASE}" || true
+            else
+              touch "${TMP_BASE}"
+            fi
           else
-            touch "${TMP_BASE}"
+            if [ -f "${EXISTING}" ]; then
+              cp "${EXISTING}" "${TMP_BASE}"
+            else
+              touch "${TMP_BASE}"
+            fi
           fi
           # Collect extensions of binary files under "file/"
           : > "${TMP_EXTS}"
           echo "Scanning files in file/ directory..."
           if [ "${{ github.event.inputs.reset_lfs }}" = "true" ]; then
             echo "Reset mode: deriving extensions from current LFS-tracked files" >&2
-            git lfs ls-files -n -- 'file/**' | while IFS= read -r f; do
+            git lfs ls-files -n | grep '^file/' | while IFS= read -r f; do
               if [ -f "$f" ]; then
                 ext="${f##*.}"
                 # Skip known text-y extensions we never want in LFS
