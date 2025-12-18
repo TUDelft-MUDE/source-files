@@ -82,7 +82,7 @@ jobs:
               if [ -f "$f" ]; then
                 ext="${f##*.}"
                 # Skip known text-y extensions we never want in LFS
-                if printf "%s" "$ext" | grep -qiE '^(fig|tex|sh|md|txt|py)$'; then
+                if printf "%s" "$ext" | grep -qiE '^(fig|tex|sh|md|txt|py|csv)$'; then
                   echo "  $f -> skip (text-y ext)" >&2
                   continue
                 fi
@@ -95,10 +95,15 @@ jobs:
           else
             git ls-files -z -- file | while IFS= read -r -d '' f; do
               if [ -f "$f" ]; then
+                ext="${f##*.}"
+                # Skip known text extensions
+                if printf "%s" "$ext" | grep -qiE '^(fig|tex|sh|md|txt|py|csv)$'; then
+                  echo "  $f -> skip (text ext: $ext)" >&2
+                  continue
+                fi
                 # Use git's binary heuristic via numstat against /dev/null
                 numstat=$(git diff --no-index --numstat /dev/null "$f" 2>/dev/null || true)
                 if printf "%s" "$numstat" | grep -qE '^[[:space:]]*-[[:space:]]*-[[:space:]]'; then
-                  ext="${f##*.}"
                   if [ "$ext" != "$f" ] && [ -n "$ext" ]; then
                     echo "  $f -> binary (extension: $ext)" >&2
                     echo "$ext"
