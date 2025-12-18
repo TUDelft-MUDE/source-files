@@ -1,4 +1,14 @@
 on:
+  workflow_dispatch:  # Manual trigger with option to reset
+    inputs:
+      reset_lfs:
+        description: 'Reset and migrate existing files (removes non-binary files from LFS)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
   push:
     branches:
       - '**'
@@ -48,9 +58,22 @@ jobs:
           : > "${TMP_EXTS}"
           git ls-files -z -- file | while IFS= read -r -d '' f; do
             if [ -f "$f" ]; then
-              # Use git's built-in binary detection
-              # grep -I will exit with status 1 for binary files
-              if ! grep -qI . "$f" 2>/dev/null; then
+              # Check actual file content (git lfs files will be checked in working tree)
+              # First try to get actual content if it's an LFS pointer
+              is_binary=false
+              if git lfs ls-files | grep -qF "$f"; then
+                # File is in LFS - check actual content in working tree
+                if [ -f "$f" ] && ! grep -qI . "$f" 2>/dev/null; then
+                  is_binary=true
+                fi
+              else
+                # Regular git file - check directly
+                if ! grep -qI . "$f" 2>/dev/null; then
+                  is_binary=true
+                fi
+              fi
+              
+              if [ "$is_binary" = true ]; then
                 # Extract extension (everything after last dot, or empty if no dot)
                 ext="${f##*.}"
                 if [ "$ext" != "$f" ] && [ -n "$ext" ]; then
@@ -86,7 +109,7 @@ jobs:
             echo "No .gitattributes changes to commit."
           fi
       - name: Re-add files as LFS
-        if: ${{ github.actor != 'github-actions[bot]' }}
+        if: ${{ github.actor != 'github-actions[bot]' && github.event.inputs.reset_lfs == 'true' }}
         run: |
           set -euo pipefail
           # Find files that should be in LFS according to .gitattributes
@@ -94,7 +117,7 @@ jobs:
           TMP_FILES=$(mktemp)
           git ls-files -z -- file | while IFS= read -r -d '' f; do
             if [ -f "$f" ]; then
-              # Use grep -I to detect binary files (exits with 1 for binary)
+              # Check actual file content in working tree
               if ! grep -qI . "$f" 2>/dev/null; then
                 printf "%s\0" "$f"
               fi
