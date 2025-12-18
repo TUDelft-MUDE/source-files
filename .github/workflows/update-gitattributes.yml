@@ -40,6 +40,12 @@ jobs:
         if: ${{ github.actor != 'github-actions[bot]' }}
         run: |
           git lfs install
+      - name: Pull LFS files for reset
+        if: ${{ github.actor != 'github-actions[bot]' && github.event.inputs.reset_lfs == 'true' }}
+        run: |
+          git lfs pull
+          echo "LFS files downloaded. Sample file check:"
+          ls -lh file/*.png 2>/dev/null | head -3 || echo "No PNG files found"
       - name: Detect binary file types under file/ and build new .gitattributes
         if: ${{ github.actor != 'github-actions[bot]' }}
         run: |
@@ -56,32 +62,23 @@ jobs:
           fi
           # Collect extensions of binary files under "file/"
           : > "${TMP_EXTS}"
-          git ls-files -z -- file | while IFS= read -r -d '' f; do
+          echo "Scanning files in file/ directory..."
+          git ls-files -z -- "file/**" | while IFS= read -r -d '' f; do
             if [ -f "$f" ]; then
-              # Check actual file content (git lfs files will be checked in working tree)
-              # First try to get actual content if it's an LFS pointer
-              is_binary=false
-              if git lfs ls-files | grep -qF "$f"; then
-                # File is in LFS - check actual content in working tree
-                if [ -f "$f" ] && ! grep -qI . "$f" 2>/dev/null; then
-                  is_binary=true
-                fi
-              else
-                # Regular git file - check directly
-                if ! grep -qI . "$f" 2>/dev/null; then
-                  is_binary=true
-                fi
-              fi
-              
-              if [ "$is_binary" = true ]; then
-                # Extract extension (everything after last dot, or empty if no dot)
+              # Use grep -I to detect binary files (exits with 1 for binary)
+              if ! grep -qI . "$f" 2>/dev/null; then
                 ext="${f##*.}"
                 if [ "$ext" != "$f" ] && [ -n "$ext" ]; then
+                  echo "  $f -> binary (extension: $ext)" >&2
                   echo "$ext"
                 fi
+              else
+                echo "  $f -> text" >&2
               fi
             fi
           done | sort -u > "${TMP_EXTS}" || true
+          echo "Binary extensions found:"
+          cat "${TMP_EXTS}" || echo "  (none)"
           # Build new .gitattributes with extension patterns
           cat "${TMP_BASE}" > "${REPO_ROOT}/.gitattributes.new"
           if [ -s "${TMP_EXTS}" ]; then
@@ -108,39 +105,17 @@ jobs:
           else
             echo "No .gitattributes changes to commit."
           fi
-      - name: Re-add files as LFS
+      - name: Renormalize files for updated .gitattributes (reset only)
         if: ${{ github.actor != 'github-actions[bot]' && github.event.inputs.reset_lfs == 'true' }}
         run: |
           set -euo pipefail
-          # Find files that should be in LFS according to .gitattributes
-          # Use a temp file to collect the list
-          TMP_FILES=$(mktemp)
-          git ls-files -z -- file | while IFS= read -r -d '' f; do
-            if [ -f "$f" ]; then
-              # Check actual file content in working tree
-              if ! grep -qI . "$f" 2>/dev/null; then
-                printf "%s\0" "$f"
-              fi
-            fi
-          done > "${TMP_FILES}"
-          
-          if [ -s "${TMP_FILES}" ]; then
-            echo "Files to migrate to LFS:"
-            cat "${TMP_FILES}" | xargs -0 printf "%s\n"
-            
-            # Remove files from Git cache and re-add them
-            cat "${TMP_FILES}" | xargs -0 git rm --cached --
-            cat "${TMP_FILES}" | xargs -0 git add --
-            
-            rm -f "${TMP_FILES}"
-            
-            if git status --porcelain | grep -q .; then
-              git commit -m "chore: migrate binary files to LFS (automated)"
-              git push
-            else
-              echo "Files already in LFS format."
-            fi
+          echo "Renormalizing files under file/ based on updated .gitattributes..."
+          git add --renormalize file/
+          if git status --porcelain | grep -q .; then
+            echo "Changes after renormalize:"
+            git --no-pager status --porcelain
+            git commit -m "chore: renormalize files per updated .gitattributes (automated)"
+            git push
           else
-            echo "No binary files to migrate to LFS."
-            rm -f "${TMP_FILES}"
+            echo "No renormalization changes detected."
           fi
