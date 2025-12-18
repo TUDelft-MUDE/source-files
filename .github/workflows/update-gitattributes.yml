@@ -48,9 +48,9 @@ jobs:
           : > "${TMP_EXTS}"
           git ls-files -z -- file | while IFS= read -r -d '' f; do
             if [ -f "$f" ]; then
-              # Use git's native binary detection via diff --numstat
-              # Binary files show "- - filename" in numstat output
-              if git diff --numstat 4b825dc642cb6eb9a060e54bf8d69288fbee4904 HEAD -- "$f" | grep -q "^-[[:space:]]*-[[:space:]]"; then
+              # Use git's built-in binary detection
+              # grep -I will exit with status 1 for binary files
+              if ! grep -qI . "$f" 2>/dev/null; then
                 # Extract extension (everything after last dot, or empty if no dot)
                 ext="${f##*.}"
                 if [ "$ext" != "$f" ] && [ -n "$ext" ]; then
@@ -94,9 +94,8 @@ jobs:
           TMP_FILES=$(mktemp)
           git ls-files -z -- file | while IFS= read -r -d '' f; do
             if [ -f "$f" ]; then
-              # Use git's native binary detection via diff --numstat
-              # Binary files show "- - filename" in numstat output
-              if git diff --numstat 4b825dc642cb6eb9a060e54bf8d69288fbee4904 HEAD -- "$f" | grep -q "^-[[:space:]]*-[[:space:]]"; then
+              # Use grep -I to detect binary files (exits with 1 for binary)
+              if ! grep -qI . "$f" 2>/dev/null; then
                 printf "%s\0" "$f"
               fi
             fi
