@@ -164,6 +164,3 @@ jobs:
           else
             echo "No renormalization changes detected."
           fi
-          else
-            echo "No renormalization changes detected."
-          fi
