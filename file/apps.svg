@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="257.29648mm"
+   height="120.29619mm"
+   viewBox="0 0 972.45916 454.66277"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="marker4"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         id="path4" />
+    </marker>
+    <linearGradient
+       id="swatch36">
+      <stop
+         style="stop-color:#f5f5f5;stop-opacity:1;"
+         offset="0"
+         id="stop36" />
+    </linearGradient>
+    <linearGradient
+       id="swatch12">
+      <stop
+         style="stop-color:#00b8c8;stop-opacity:1;"
+         offset="0"
+         id="stop12" />
+    </linearGradient>
+    <linearGradient
+       id="swatch7">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#swatch7"
+       id="linearGradient45"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.65629403,0,0,0.44777633,1191.6025,103.63403)"
+       x1="91.00753"
+       y1="204.44643"
+       x2="440.43915"
+       y2="204.44643" />
+    <linearGradient
+       xlink:href="#swatch7"
+       id="linearGradient46"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.35672389,0,0,0.26507132,1577.2032,236.55967)"
+       x1="91.00753"
+       y1="204.44643"
+       x2="440.43915"
+       y2="204.44643" />
+    <linearGradient
+       xlink:href="#swatch7"
+       id="linearGradient47"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.35672389,0,0,0.26507132,1722.9027,236.55967)"
+       x1="91.00753"
+       y1="204.44643"
+       x2="440.43915"
+       y2="204.44643" />
+    <linearGradient
+       xlink:href="#swatch7"
+       id="linearGradient48"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.35672389,0,0,0.26507132,1868.6021,236.55967)"
+       x1="91.00753"
+       y1="204.44643"
+       x2="440.43915"
+       y2="204.44643" />
+    <linearGradient
+       xlink:href="#swatch7"
+       id="linearGradient49"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.35672389,0,0,0.26507132,2014.3015,236.55967)"
+       x1="91.00753"
+       y1="204.44643"
+       x2="440.43915"
+       y2="204.44643" />
+    <marker
+       style="overflow:visible"
+       id="marker4-28"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         id="path4-44" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         id="path4-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4-1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         id="path4-2" />
+    </marker>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-1256.1396,-20.75745)">
+    <text
+       xml:space="preserve"
+       style="font-size:37.3333px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.89134;stroke-dasharray:none;stroke-opacity:1"
+       x="1529.0028"
+       y="115.60439"
+       id="text7-2-2"><tspan
+         x="1529.0028"
+         y="115.60439"
+         id="tspan8-7-2"
+         dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.6748029">&quot;Application&quot; Software</tspan><tspan
+         x="1529.0028"
+         y="162.27103"
+         id="tspan9-1-4">(App's)</tspan><tspan
+         x="1529.0028"
+         y="208.93765"
+         id="tspan10-5-9" /></text>
+    <g
+       id="g45"
+       transform="translate(6.6991811,82.17383)"
+       style="stroke-width:3.77953;stroke-dasharray:none">
+      <rect
+         style="fill:#00a6d6;fill-opacity:1;stroke:url(#linearGradient45);stroke-width:3.77953;stroke-linejoin:miter;stroke-dasharray:none"
+         id="rect1-1"
+         width="229.3299"
+         height="121.96601"
+         x="1251.3302"
+         y="134.19728"
+         ry="11.654257" />
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1"
+         x="1272.9683"
+         y="205.24278"
+         id="text45"><tspan
+           id="tspan45"
+           x="1272.9683"
+           y="205.24278">Computer</tspan></text>
+    </g>
+    <rect
+       style="fill:#00a6d6;fill-opacity:1;stroke:url(#linearGradient46);stroke-width:3.77953;stroke-linejoin:miter;stroke-dasharray:none"
+       id="rect1-1-9"
+       width="124.65061"
+       height="72.200539"
+       x="1609.6678"
+       y="254.65227"
+       ry="6.8990006" />
+    <text
+       xml:space="preserve"
+       style="font-size:37.3333px;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1"
+       x="1709.618"
+       y="288.42184"
+       id="text45-6"
+       transform="scale(0.95822183,1.0435997)"><tspan
+         id="tspan45-3"
+         x="1709.618"
+         y="288.42184"
+         style="font-size:37.3333px;stroke-width:3.77953">App</tspan></text>
+    <rect
+       style="fill:#00a6d6;fill-opacity:1;stroke:url(#linearGradient47);stroke-width:3.77953;stroke-linejoin:miter;stroke-dasharray:none"
+       id="rect1-1-9-9"
+       width="124.65061"
+       height="72.200539"
+       x="1755.3672"
+       y="254.65227"
+       ry="6.8990006" />
+    <text
+       xml:space="preserve"
+       style="font-size:37.3333px;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1"
+       x="1861.6699"
+       y="290.82843"
+       id="text45-6-0"
+       transform="scale(0.95822183,1.0435997)"><tspan
+         id="tspan45-3-5"
+         x="1861.6699"
+         y="290.82843"
+         style="font-size:37.3333px;stroke-width:3.77953">App</tspan></text>
+    <rect
+       style="fill:#00a6d6;fill-opacity:1;stroke:url(#linearGradient48);stroke-width:3.77953;stroke-linejoin:miter;stroke-dasharray:none"
+       id="rect1-1-9-2"
+       width="124.65061"
+       height="72.200539"
+       x="1901.0667"
+       y="254.65227"
+       ry="6.8990006" />
+    <text
+       xml:space="preserve"
+       style="font-size:37.3333px;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1"
+       x="2013.7218"
+       y="288.42184"
+       id="text45-6-6"
+       transform="scale(0.95822183,1.0435997)"><tspan
+         id="tspan45-3-4"
+         x="2013.7218"
+         y="288.42184"
+         style="font-size:37.3333px;stroke-width:3.77953">App</tspan></text>
+    <rect
+       style="fill:#00a6d6;fill-opacity:1;stroke:url(#linearGradient49);stroke-width:3.77953;stroke-linejoin:miter;stroke-dasharray:none"
+       id="rect1-1-9-2-5"
+       width="124.65061"
+       height="72.200539"
+       x="2046.766"
+       y="254.65227"
+       ry="6.8990006" />
+    <text
+       xml:space="preserve"
+       style="font-size:37.3333px;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1"
+       x="2165.7737"
+       y="288.42184"
+       id="text45-6-6-5"
+       transform="scale(0.95822183,1.0435997)"><tspan
+         id="tspan45-3-4-4"
+         x="2165.7737"
+         y="288.42184"
+         style="font-size:37.3333px;stroke-width:3.77953">App</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:37.3333px;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.26772;stroke-dasharray:none;stroke-opacity:1"
+       x="1257.515"
+       y="381.55832"
+       id="text49"><tspan
+         style="font-size:37.3333px;stroke-width:2.26772"
+         x="1257.515"
+         y="381.55832"
+         id="tspan50">Laptop, Desktop</tspan><tspan
+         style="font-size:37.3333px;stroke-width:2.26772"
+         x="1257.515"
+         y="428.22495"
+         id="tspan51">Cloud</tspan><tspan
+         style="font-size:37.3333px;stroke-width:2.26772"
+         x="1257.515"
+         y="474.89157"
+         id="tspan52">etc.</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:7.55906;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4)"
+       d="m 1671.9932,342.35736 v 63.33298"
+       id="path52" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:7.55906;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4-28)"
+       d="m 1817.6925,342.35736 v 63.33298"
+       id="path52-8" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:7.55906;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4-3)"
+       d="m 1963.3919,342.35736 v 63.33298"
+       id="path52-3" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:7.55906;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4-1)"
+       d="m 2109.0913,342.35736 v 63.33298"
+       id="path52-39" />
+    <text
+       xml:space="preserve"
+       style="font-size:37.3333px;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.26772;stroke-dasharray:none;stroke-opacity:1"
+       x="1673.8412"
+       y="449.61206"
+       id="text53"><tspan
+         id="tspan53"
+         style="font-size:37.3333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.26772"
+         x="1673.8412"
+         y="449.61206">OS-specific</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:37.3333px;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.26772;stroke-dasharray:none;stroke-opacity:1"
+       x="1942.7858"
+       y="449.61206"
+       id="text53-5"><tspan
+         id="tspan53-1"
+         style="font-size:37.3333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.26772"
+         x="1942.7858"
+         y="449.61206">Not OS-specific</tspan><tspan
+         style="font-size:37.3333px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.26772"
+         x="1942.7858"
+         y="496.27872"
+         id="tspan54" /></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#0076c2;stroke-width:7.55906;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4)"
+       d="M 1817.6925,245.15889 V 117.26949"
+       id="path54" />
+    <text
+       xml:space="preserve"
+       style="font-size:37.3333px;text-align:center;text-anchor:middle;fill:#0076c2;fill-opacity:1;stroke:none;stroke-width:2.26772;stroke-dasharray:none;stroke-opacity:1"
+       x="1972.2308"
+       y="49.122009"
+       id="text55"><tspan
+         style="font-size:37.3333px;text-align:center;text-anchor:middle;fill:#0076c2;fill-opacity:1;stroke:none;stroke-width:2.26772"
+         x="1972.2308"
+         y="49.122009"
+         id="tspan56">Sometimes this is needed</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:37.3333px;text-align:center;text-anchor:middle;fill:#0076c2;fill-opacity:1;stroke:none;stroke-width:2.26772;stroke-dasharray:none;stroke-opacity:1"
+       x="2044.9491"
+       y="218.77393"
+       id="text55-9"><tspan
+         style="font-size:37.3333px;text-align:center;text-anchor:middle;fill:#0076c2;fill-opacity:1;stroke:none;stroke-width:2.26772"
+         x="2044.9491"
+         y="218.77393"
+         id="tspan56-6">Where we want to be</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:37.3333px;text-align:center;text-anchor:middle;fill:#a50034;fill-opacity:1;stroke:none;stroke-width:2.26772;stroke-dasharray:none;stroke-opacity:1"
+       x="1978.8275"
+       y="95.645523"
+       id="text57"><tspan
+         id="tspan57"
+         style="font-size:37.3333px;fill:#a50034;fill-opacity:1;stroke:none;stroke-width:2.26772"
+         x="1978.8275"
+         y="95.645523">Python (interpreter),</tspan><tspan
+         style="font-size:37.3333px;fill:#a50034;fill-opacity:1;stroke:none;stroke-width:2.26772"
+         x="1978.8275"
+         y="142.31215"
+         id="tspan58">CLI, VS Code, etc</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#0076c2;stroke-width:7.55906;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1889.8444,281.6788 v -39.89597 h 292.5511 v 39.89598"
+       id="path58" />
+  </g>
+</svg>

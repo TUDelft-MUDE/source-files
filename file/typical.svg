@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="284.75861mm"
+   height="175.18616mm"
+   viewBox="0 0 1076.253 662.12093"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="marker20"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path20" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker86"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.75"
+       markerHeight="0.75"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         transform="scale(-0.5)"
+         id="path86" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DartArrow"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.75"
+       markerHeight="0.75"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         transform="scale(-0.5)"
+         id="path6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.75"
+       markerHeight="0.75"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         id="path4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ArrowWide"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         id="path3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ArrowWideRounded"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         id="path2" />
+    </marker>
+    <linearGradient
+       id="swatch36">
+      <stop
+         style="stop-color:#f5f5f5;stop-opacity:1;"
+         offset="0"
+         id="stop36" />
+    </linearGradient>
+    <linearGradient
+       id="swatch12">
+      <stop
+         style="stop-color:#00b8c8;stop-opacity:1;"
+         offset="0"
+         id="stop12" />
+    </linearGradient>
+    <rect
+       x="293.94031"
+       y="83.021309"
+       width="171.65218"
+       height="47.120205"
+       id="rect10" />
+    <linearGradient
+       id="swatch7">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#swatch7"
+       id="linearGradient9"
+       x1="296.18414"
+       y1="106.02046"
+       x2="422.95993"
+       y2="106.02046"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#swatch7"
+       id="linearGradient10"
+       x1="296.18414"
+       y1="222.69907"
+       x2="422.95993"
+       y2="222.69907"
+       gradientUnits="userSpaceOnUse" />
+    <rect
+       x="293.94031"
+       y="83.021309"
+       width="171.65218"
+       height="47.120205"
+       id="rect10-3" />
+    <rect
+       x="293.94031"
+       y="83.021309"
+       width="171.65218"
+       height="47.120205"
+       id="rect10-87" />
+    <linearGradient
+       xlink:href="#swatch7"
+       id="linearGradient11"
+       gradientUnits="userSpaceOnUse"
+       x1="296.18414"
+       y1="106.02046"
+       x2="422.95993"
+       y2="106.02046"
+       gradientTransform="matrix(1.1587821,0,0,0.99835366,131.265,82.748841)" />
+    <linearGradient
+       xlink:href="#swatch12"
+       id="linearGradient12"
+       x1="474.01791"
+       y1="188.59474"
+       x2="621.84338"
+       y2="188.59474"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#swatch12"
+       id="linearGradient13"
+       x1="295.75647"
+       y1="222.69907"
+       x2="423.3876"
+       y2="222.69907"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#swatch12"
+       id="linearGradient15"
+       x1="295.75647"
+       y1="106.02046"
+       x2="423.3876"
+       y2="106.02046"
+       gradientUnits="userSpaceOnUse" />
+    <rect
+       x="293.94031"
+       y="83.021309"
+       width="171.65218"
+       height="47.120205"
+       id="rect10-30" />
+    <linearGradient
+       xlink:href="#swatch12"
+       id="linearGradient16"
+       gradientUnits="userSpaceOnUse"
+       x1="295.75647"
+       y1="106.02046"
+       x2="423.3876"
+       y2="106.02046"
+       gradientTransform="translate(-101.85197,338.28445)" />
+    <linearGradient
+       xlink:href="#swatch7"
+       id="linearGradient17"
+       gradientUnits="userSpaceOnUse"
+       x1="296.18414"
+       y1="106.02046"
+       x2="422.95993"
+       y2="106.02046"
+       gradientTransform="translate(-101.85197,338.28445)" />
+    <linearGradient
+       xlink:href="#swatch7"
+       id="linearGradient40"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1930398,0,0,0.79951425,-67.610872,396.66955)"
+       x1="91.00753"
+       y1="204.44643"
+       x2="440.43915"
+       y2="204.44643" />
+    <rect
+       x="293.94031"
+       y="83.021309"
+       width="171.65218"
+       height="47.120205"
+       id="rect10-30-2" />
+    <linearGradient
+       xlink:href="#swatch12"
+       id="linearGradient18"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0944676,0,0,0.99576944,333.53847,340.73298)"
+       x1="295.75647"
+       y1="106.02046"
+       x2="423.3876"
+       y2="106.02046" />
+    <linearGradient
+       xlink:href="#swatch7"
+       id="linearGradient19"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0944676,0,0,0.99576944,333.53847,340.73298)"
+       x1="296.18414"
+       y1="106.02046"
+       x2="422.95993"
+       y2="106.02046" />
+    <rect
+       x="293.94031"
+       y="83.021309"
+       width="367.05582"
+       height="47.120205"
+       id="rect10-87-8" />
+    <linearGradient
+       xlink:href="#swatch12"
+       id="linearGradient3"
+       gradientUnits="userSpaceOnUse"
+       x1="474.01791"
+       y1="188.59474"
+       x2="621.84338"
+       y2="188.59474"
+       gradientTransform="matrix(2.4016278,0,0,0.95072837,-666.07564,9.2923706)" />
+    <linearGradient
+       xlink:href="#swatch7"
+       id="linearGradient4"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.7829632,0,0,0.94916315,-350.82597,87.964042)"
+       x1="296.18414"
+       y1="106.02046"
+       x2="422.95993"
+       y2="106.02046" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-33.56139,-8.7826721)">
+    <rect
+       style="fill:#00a6d6;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1"
+       width="367.30692"
+       height="281.28156"
+       x="35.451164"
+       y="60.532005"
+       ry="26.877386" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient40);stroke-width:3.77953;stroke-linejoin:miter;stroke-dasharray:none"
+       id="rect1-3"
+       width="416.8858"
+       height="217.77293"
+       x="40.96471"
+       y="451.24091"
+       ry="20.808926" />
+    <g
+       id="g19"
+       transform="translate(-37.643447,-10.005115)"
+       style="stroke-width:3.77953;stroke-dasharray:none">
+      <rect
+         style="fill:url(#linearGradient15);fill-opacity:1;stroke:url(#linearGradient9);stroke-width:3.77953;stroke-dasharray:none"
+         id="rect5"
+         width="126.77579"
+         height="39.266838"
+         x="296.18414"
+         y="86.387047"
+         ry="8.7836285" />
+      <text
+         xml:space="preserve"
+         id="text10"
+         style="font-size:24px;white-space:pre;shape-inside:url(#rect10);display:inline;fill:#000000;fill-opacity:1;stroke-width:3.77953;stroke-dasharray:none"
+         transform="translate(6.7314578,8.4876385)"><tspan
+           x="293.93945"
+           y="104.85834"
+           id="tspan2">Hardware</tspan></text>
+    </g>
+    <g
+       id="g22"
+       style="stroke-width:3.77953;stroke-dasharray:none"
+       transform="translate(-233.944,-33.893289)">
+      <rect
+         style="fill:url(#linearGradient12);fill-opacity:1;stroke:url(#linearGradient11);stroke-width:3.77953;stroke-dasharray:none"
+         id="rect5-7"
+         width="146.90552"
+         height="39.20219"
+         x="474.47791"
+         y="168.99365"
+         ry="8.7513189" />
+      <text
+         xml:space="preserve"
+         id="text10-7"
+         style="font-size:24px;white-space:pre;shape-inside:url(#rect10-87);display:inline;fill:#000000;fill-opacity:1;stroke-width:3.77953;stroke-dasharray:none"
+         transform="translate(184.99288,91.061934)"><tspan
+           x="293.93945"
+           y="104.85834"
+           id="tspan3">Peripherals</tspan></text>
+    </g>
+    <g
+       id="g22-0"
+       style="stroke-width:3.77953;stroke-dasharray:none"
+       transform="translate(-432.36441,-158.32121)">
+      <rect
+         style="fill:url(#linearGradient3);fill-opacity:1;stroke:url(#linearGradient4);stroke-width:5.71109;stroke-dasharray:none"
+         id="rect5-7-1"
+         width="352.81238"
+         height="37.270634"
+         x="473.4437"
+         y="169.95943"
+         ry="8.3201275" />
+      <text
+         xml:space="preserve"
+         id="text10-7-9"
+         style="font-size:24px;white-space:pre;shape-inside:url(#rect10-87-8);display:inline;fill:#000000;fill-opacity:1;stroke-width:3.77953;stroke-dasharray:none"
+         transform="translate(184.99288,91.061934)"><tspan
+           x="293.93945"
+           y="104.85834"
+           id="tspan4">Desktop or Laptop Computer</tspan></text>
+    </g>
+    <g
+       id="g21"
+       style="stroke-width:3.77953;stroke-dasharray:none"
+       transform="translate(-37.643447,-7.761287)">
+      <rect
+         style="fill:url(#linearGradient13);fill-opacity:1;stroke:url(#linearGradient10);stroke-width:3.77953;stroke-dasharray:none"
+         id="rect7"
+         width="126.77579"
+         height="39.266838"
+         x="296.18414"
+         y="203.06564"
+         ry="5.9968662" />
+      <text
+         xml:space="preserve"
+         id="text10-6"
+         style="font-size:24px;white-space:pre;shape-inside:url(#rect10-3);display:inline;fill:#000000;fill-opacity:1;stroke-width:3.77953;stroke-dasharray:none"
+         transform="translate(6.7662418,126.02199)"><tspan
+           x="293.93945"
+           y="104.85834"
+           id="tspan5">Software</tspan></text>
+    </g>
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:3.77953;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWideRounded)"
+       d="m 385.60683,214.84786 c 29.29068,84.94297 76.15577,70.29763 130.34352,71.76216"
+       id="path37" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#ArrowWide);marker-end:url(#marker4)"
+       d="m 594.32072,253.80374 -76.41073,-0.1311 v 69.3073 h 55.30084"
+       id="path1" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.89134;stroke-dasharray:none;stroke-opacity:1"
+       x="655.07495"
+       y="247.73929"
+       id="text7"><tspan
+         id="tspan7"
+         x="655.07495"
+         y="247.73929">&quot;System&quot;</tspan><tspan
+         x="655.07495"
+         y="277.73929"
+         id="tspan8">Software</tspan><tspan
+         x="655.07495"
+         y="307.73929"
+         id="tspan9" /><tspan
+         x="655.07495"
+         y="337.73929"
+         id="tspan10" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.89134;stroke-dasharray:none;stroke-opacity:1"
+       x="655.07495"
+       y="317.06467"
+       id="text7-2"><tspan
+         x="655.07495"
+         y="317.06467"
+         id="tspan11">&quot;Application&quot;</tspan><tspan
+         x="655.07495"
+         y="347.06467"
+         id="tspan8-7">Software</tspan><tspan
+         x="655.07495"
+         y="377.06467"
+         id="tspan9-1" /><tspan
+         x="655.07495"
+         y="407.06467"
+         id="tspan10-5" /></text>
+  </g>
+  <g
+     id="layer2"
+     style="display:inline"
+     transform="translate(-33.56139,-8.7826721)">
+    <g
+       id="g23"
+       style="stroke-width:3.77953;stroke-dasharray:none"
+       transform="translate(-151.99223,-25.290369)">
+      <rect
+         style="fill:url(#linearGradient16);fill-opacity:1;stroke:url(#linearGradient17);stroke-width:3.77953;stroke-dasharray:none"
+         id="rect5-2"
+         width="126.77579"
+         height="39.266838"
+         x="194.33218"
+         y="424.67148"
+         ry="8.783639" />
+      <text
+         xml:space="preserve"
+         id="text10-2"
+         style="font-size:24px;white-space:pre;shape-inside:url(#rect10-30);display:inline;fill:#000000;fill-opacity:1;stroke-width:3.77953;stroke-dasharray:none"
+         transform="translate(-95.120506,346.77208)"><tspan
+           x="293.93945"
+           y="104.85834"
+           id="tspan6">Hardware</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;fill:#050505;fill-opacity:1;stroke-width:1.87465;stroke-linejoin:miter;stroke-dasharray:none"
+       x="51.403263"
+       y="481.81277"
+       id="text22"><tspan
+         id="tspan22"
+         x="51.403263"
+         y="481.81277"
+         style="font-weight:bold">Essential</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;fill:#050505;fill-opacity:1;stroke-width:1.87465;stroke-linejoin:miter;stroke-dasharray:none"
+       x="83.65654"
+       y="518.83582"
+       id="text23"><tspan
+         id="tspan23"
+         x="83.65654"
+         y="518.83582">CPU</tspan><tspan
+         x="83.65654"
+         y="548.83582"
+         id="tspan24">RAM</tspan><tspan
+         x="83.65654"
+         y="578.83582"
+         id="tspan25">HD</tspan><tspan
+         x="83.65654"
+         y="608.83582"
+         id="tspan26">Motherboard</tspan><tspan
+         x="83.65654"
+         y="638.83582"
+         id="tspan27">Case/frame</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;fill:#050505;fill-opacity:1;stroke-width:1.87465;stroke-linejoin:miter;stroke-dasharray:none"
+       x="278.8688"
+       y="518.59198"
+       id="text28"><tspan
+         id="tspan28"
+         x="278.8688"
+         y="518.59198">Graphics card</tspan><tspan
+         x="278.8688"
+         y="548.59198"
+         id="tspan29">Sound</tspan><tspan
+         x="278.8688"
+         y="578.59198"
+         id="tspan30">... </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;fill:#000000;fill-opacity:1;stroke-width:1.73333;stroke-linejoin:miter;stroke-dasharray:none"
+       x="56.113438"
+       y="637.89172"
+       id="text32"><tspan
+         id="tspan32"
+         x="56.113438"
+         y="637.89172">+</tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke-width:1.73333;stroke-linejoin:miter;stroke-dasharray:none"
+       d="m 381.21324,213.38333 41.00694,84.94296"
+       id="path32" />
+    <g
+       id="g32"
+       transform="translate(-169.27714,-22.265958)"
+       style="display:inline;stroke-width:3.77953;stroke-dasharray:none">
+      <g
+         id="g24"
+         style="stroke-width:3.77953;stroke-dasharray:none">
+        <rect
+           style="display:inline;fill:url(#linearGradient18);fill-opacity:1;stroke:url(#linearGradient19);stroke-width:3.94565;stroke-dasharray:none"
+           id="rect5-2-4"
+           width="138.75198"
+           height="39.100716"
+           x="657.70239"
+           y="426.75455"
+           ry="8.746479" />
+        <text
+           xml:space="preserve"
+           id="text10-2-5"
+           style="font-size:24px;white-space:pre;shape-inside:url(#rect10-30-2);display:inline;fill:#000000;fill-opacity:1;stroke-width:3.77953;stroke-dasharray:none"
+           transform="translate(368.16665,348.77208)"><tspan
+             x="293.93945"
+             y="104.85834"
+             id="tspan12">Peripherals</tspan></text>
+      </g>
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker86)"
+         d="m 658.74859,478.38006 -0.0422,16.5442 13.1521,0.40499"
+         id="path24" />
+      <path
+         style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#DartArrow)"
+         d="m 658.74859,507.90191 -0.0422,16.5442 13.1521,0.40499"
+         id="path24-4" />
+      <path
+         style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#DartArrow)"
+         d="m 658.74859,537.42376 -0.0422,16.5442 13.1521,0.40499"
+         id="path24-9" />
+      <text
+         xml:space="preserve"
+         style="font-size:24px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1"
+         x="733.04688"
+         y="503.2796"
+         id="text31"><tspan
+           id="tspan31"
+           x="733.04688"
+           y="503.2796">Mouse</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;text-align:start;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1"
+         x="693.19293"
+         y="531.43359"
+         id="text31-5"><tspan
+           id="tspan31-9"
+           x="693.19293"
+           y="531.43359">Keyboard</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;text-align:center;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1"
+         x="749.7359"
+         y="560.20959"
+         id="text31-5-0"><tspan
+           id="tspan31-9-9"
+           x="749.7359"
+           y="560.20959">Speakers</tspan></text>
+    </g>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="m 722.03319,247.80374 c 0,0 16.39606,7.62617 27.91674,-12 19.69188,-33.5463 34.84645,-26.86596 51.50795,-24.29883"
+       id="path31" />
+    <path
+       style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.19144;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker20)"
+       d="m 741.047,329.03619 c 0,0 47.99252,12.13533 56.26197,58.79001 10.68131,60.26198 74.59503,72.73355 94.85179,72.73355"
+       id="path31-2" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1"
+       d="M 873.21939,88.1003 841.91125,87.854993 V 318.50032 l 33.25307,-0.41367"
+       id="path33" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.54626;stroke-dasharray:none;stroke-opacity:1"
+       x="853.93561"
+       y="117.57787"
+       id="text33"><tspan
+         id="tspan33"
+         x="853.93561"
+         y="117.57787"
+         style="font-size:24px;stroke-width:2.54626">Operating System (OS)</tspan><tspan
+         x="853.93561"
+         y="147.57788"
+         style="font-size:24px;stroke-width:2.54626"
+         id="tspan36">.</tspan><tspan
+         x="853.93561"
+         y="177.57788"
+         style="font-size:24px;stroke-width:2.54626"
+         id="tspan40">e.g., Device &quot;drivers&quot;</tspan><tspan
+         x="853.93561"
+         y="207.57788"
+         style="font-size:24px;stroke-width:2.54626"
+         id="tspan41" /><tspan
+         x="853.93561"
+         y="237.57788"
+         id="tspan34"
+         style="font-size:24px;stroke-width:2.54626" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.26772;stroke-dasharray:none;stroke-opacity:1"
+       x="972.24915"
+       y="462.05801"
+       id="text42"><tspan
+         x="972.24915"
+         y="462.05801"
+         id="tspan43"
+         style="font-weight:bold;text-align:center;text-anchor:middle">Our focus</tspan><tspan
+         x="972.24915"
+         y="492.05801"
+         id="tspan19"
+         style="font-weight:bold;text-align:center;text-anchor:middle">will be here!</tspan></text>
+  </g>
+</svg>
