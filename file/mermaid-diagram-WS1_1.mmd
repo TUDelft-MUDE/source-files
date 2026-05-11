@@ -1,0 +1,27 @@
+---
+title: WS1.1 Git history exercise 1
+config:
+  gitGraph:
+    rotateCommitLabel: true
+---
+gitGraph TB:
+   commit id: "Initial commit"
+   branch word1
+   checkout word1
+   commit id: "Added horizontal word"
+   checkout main
+   branch word2
+   checkout word2
+   commit id: "Added another horizontal word"
+   checkout main
+   merge word1 id: "merge word1 into main"
+   branch word3
+   checkout word3
+   commit id: "Added vertical word"
+   checkout main
+   merge word2 id: "merge word2 into main"
+   merge word3 id: "CONFLICT: cannot merge word3 into main" type: REVERSE
+   checkout word3
+   merge main id: "Solve conflict: merge main into word3"
+   checkout main
+   merge word3 id: "merge word3 into main"  
