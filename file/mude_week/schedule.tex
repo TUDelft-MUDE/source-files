@@ -1,0 +1,88 @@
+\documentclass[tikz,border=0mm,11pt]{standalone}
+
+\usepackage{helvet}
+
+\input{../tudcolors.tex}
+
+\begin{document}
+\foreach \n in {1,2,3,4,5} {%
+\begin{tikzpicture}[
+    event/.style={rounded corners=8pt, draw=none, align=center, text width=3.4cm, inner sep=2pt, font=\normalsize\bfseries\sffamily},
+    lecture/.style={event, fill=tudDarkGreen, text=white},
+    question/.style={event, fill=tudYellow!30},
+    workshop/.style={event, fill=tudOrange, text=white},
+    assignment/.style={event, fill=tudOrange, text=white},
+    tutorial/.style={event, fill=tudDarkGreen!50, text=white},
+    buddycheck/.style={event, fill=tudYellow, text=white, draw=none},
+    selfstudy/.style={event, tudCyan, draw, thick, fill=white, text=tudCyan}
+]
+
+
+\path (-1.1,1.) rectangle (20.5,-8.2);
+
+\node at (2, 0.5) {\large\bfseries\sffamily Monday};
+\node at (6, 0.5) {\large\bfseries\sffamily Tuesday};
+\node at (10, 0.5) {\large\bfseries\sffamily Wednesday};
+\node at (14, 0.5) {\large\bfseries\sffamily Thursday};
+\node at (18, 0.5) {\large\bfseries\sffamily Friday};
+
+\node at (-0.5, 0) {\small\sffamily 8:45};
+\node at (-0.5, -2) {\small\sffamily 10:45};
+\node at (-0.5, -4) {\small\sffamily 12:45};
+\node at (-0.5, -5) {\small\sffamily 13:45};
+\node at (-0.5, -7) {\small\sffamily 15:45};
+
+\foreach \x in {0, 4, 8, 12, 16, 20} {
+    \draw[gray!30] (\x, 0) -- (\x, -8);
+}
+\foreach \y in {0, -2, -4, -5, -7} {
+    \draw[gray!30] (0, \y) -- (20, \y);
+}
+\filldraw[lecture] (0.1, -2) rectangle (3.9, -4)
+    node[midway, align=center] {Lecture};
+
+
+\filldraw[workshop] (8.1, -2) rectangle (11.9, -4)
+    node[midway, align=center] {Workshop};
+
+\filldraw[assignment] (16.1, 0) rectangle (19.9, -4)
+    node[midway, align=center] {Group \\assignment\\\bigskip ~\\\bigskip Report due\\at end};
+
+\ifnum\n>1 
+\filldraw[selfstudy] (4.1, -2) rectangle (7.9, -4)
+    node[midway, align=center] {Question Hour};% \\\medskip (+Python tutorial)};
+\filldraw[selfstudy] (12.1, -4) rectangle (15.9, -5)
+    node[midway, align=center] {Question Hour};
+\fi
+
+
+\ifnum\n>1
+\filldraw[selfstudy,draw=none] (16.1, -5.1) rectangle (19.9, -8)
+    node[midway, align=center] {Materials for next week: \\\medskip Book chapter \\\medskip Programming assignment};
+\draw[tudCyan,very thick,->,dashed] (19.9,-6.5) to (20.4,-6.5);
+\fi
+
+\ifnum\n=3
+\draw[tudCyan,very thick,->,out=0,in=180,dashed] (-1.0,-6.5) to (6,-2.5);
+\draw[tudCyan,very thick,->,out=0,in=180,dashed] (6,-2.5) to (14,-4.2);
+\draw[tudCyan,very thick,->,out=0,in=190,dashed] (14,-4.2) to (18,-2);
+\fi
+
+\ifnum\n>3
+\filldraw[buddycheck] (16.1,-4.03) rectangle (19.9,-5) node[midway, align=center] {Buddycheck};
+\filldraw[buddycheck] (0.1,-4.03) rectangle (3.9,-5) node[midway, align=center] {Deadline};
+\draw[tudYellow,very thick,->,dashed] (19.9,-4.5) to (20.4,-4.5);
+\draw[tudYellow,very thick,->,dashed] (-1.0,-4.5) to (0.1,-4.5);
+\fi
+
+\ifnum\n>4
+\draw[tutorial] (4.2,-2.1) rectangle (8.0,-4.1)
+    node[midway, align=center] {Python tutorial \\ (Q1 weeks 2--5)};
+\fi
+% Compulsory note
+% \node[font=\footnotesize\sffamily, anchor=south east] at (20, -6) {*compulsory};
+
+\end{tikzpicture}
+}
+
+\end{document}
