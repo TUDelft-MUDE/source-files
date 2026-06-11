@@ -1,10 +1,6 @@
 import os
-import subprocess
 from pdf2image import convert_from_path
 import fitz
-
-def compile_latex_to_pdf(basename):
-    subprocess.run(["pdflatex", f"{basename}.tex"], check=True)
 
 def pdf_to_png(basename, output_dir="pngs", dpi=600):
     os.makedirs(output_dir, exist_ok=True)
@@ -22,6 +18,5 @@ def pdf_to_svg(basename, output_dir="svgs"):
 
 basename = "schedule"
 
-compile_latex_to_pdf(basename)
 pdf_to_png(basename)
 pdf_to_svg(basename)

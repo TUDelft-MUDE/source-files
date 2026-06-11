@@ -1,10 +1,5 @@
-import os
-import subprocess
 from pdf2image import convert_from_path
 import fitz
-
-def compile_latex_to_pdf(basename):
-    subprocess.run(["pdflatex", f"{basename}.tex"], check=True)
 
 def pdf_to_png(basename, dpi=600):
     image = convert_from_path(f"{basename}.pdf", dpi)
@@ -19,7 +14,6 @@ def pdf_to_svg(basename):
 
 basename = "pie"
 
-compile_latex_to_pdf(basename)
 pdf_to_png(basename)
 pdf_to_svg(basename)
 
