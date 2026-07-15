@@ -1,0 +1,27 @@
+---
+config:
+  gitGraph:
+    rotateCommitLabel: true
+---
+gitGraph TB:
+   commit id: "Inital commit"
+   branch dev
+   checkout dev
+   commit id: "Added new feature"
+   checkout main
+   commit id: "Restructure content"
+   checkout dev
+   commit id: "Fixed new features"
+   checkout main
+   commit id: "Updated README"
+   branch dev2
+   checkout dev2
+   commit id: "Added another new feature"
+   checkout dev
+   merge main id: "Merge main into dev"
+   checkout main
+   commit id: "Added contact details"
+   checkout dev2
+   merge dev id: "Merge dev into dev2"
+   checkout main
+   merge dev2 id: "Merge dev2 into main"
