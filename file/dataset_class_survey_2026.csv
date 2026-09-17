@@ -1,0 +1,113 @@
+height_cm,shoe_size,gender,degree,cats_or_dogs,hair_color,eye_color,rock_paper_scissors,modelling_uncertainty_or_data,rent_eur,room_size_m2
+168.0,39.0,Female,Civil Engineering ,Cats,Blond,Blue,Paper,*Incoherent Screaming*,656.0,29.0
+177.0,43.0,Male,"Earth, Climate, and Technology",Dogs,Brown,Green,Rock,*Incoherent Screaming*,550.0,10.0
+175.0,39.0,Female,"Earth, Climate, and Technology",Both?,Brown,Brown,Scissors,*Incoherent Screaming*,470.0,20.0
+189.0,44.0,Male,Civil Engineering ,Dogs,Blond,Grey,Scissors,Modelling,415.0,17.0
+183.0,43.0,Male,Civil Engineering ,Dogs,Black,Brown,Rock,Modelling,67.0,10.0
+191.0,46.0,Male,Environmental Engineering,Cats,Blond,Blue,Rock,Uncertainty,900.0,13.46
+170.0,43.0,Male,Civil Engineering ,Cats,Black,Brown,Scissors,Data,900.0,55.0
+170.0,43.0,Male,Civil Engineering ,Cats,Black,Grey,Rock,Modelling,600.0,12.0
+181.0,43.0,Male,Civil Engineering ,Cats,Red,Blue,Paper,Data,600.0,30.0
+179.0,45.0,Male,Environmental Engineering,Cats,Black,Brown,Rock,*Incoherent Screaming*,667.0,30.0
+189.0,44.0,Male,Civil Engineering ,Dogs,Brown,Blue,Rock,Modelling,450.0,9.0
+177.0,43.0,Male,Civil Engineering ,Cats,Blond,Hazel,Paper,Data,,20.0
+200.0,45.0,Male,Civil Engineering ,Dogs,Blond,Green,Rock,Data,400.0,13.0
+183.0,42.0,Male,Civil Engineering ,Neither! >:(,Brown,Brown,Rock,Data,500.0,8.0
+165.0,37.0,Female,Civil Engineering ,Cats,Black,Brown,Rock,*Incoherent Screaming*,,
+180.0,43.0,Male,Civil Engineering ,Dogs,Blond,Blue,Rock,*Incoherent Screaming*,1100.0,30.0
+184.0,44.0,Male,Civil Engineering ,Both?,Brown,Brown,Scissors,*Incoherent Screaming*,980.0,28.0
+157.0,24.5,Female,Environmental Engineering,Both?,Black,Brown,Scissors,*Incoherent Screaming*,1350.0,38.0
+167.0,38.0,Female,Civil Engineering ,Both?,Brown,Green,Scissors,*Incoherent Screaming*,800.0,100.0
+202.0,47.0,Male,Environmental Engineering,Both?,Brown,Hazel,Scissors,*Incoherent Screaming*,630.0,21.0
+192.0,46.0,Male,Civil Engineering ,Neither! >:(,Brown,Brown,Paper,*Incoherent Screaming*,650.0,9.0
+195.0,46.0,Male,Civil Engineering ,Dogs,Blond,Blue,Paper,Modelling,425.0,
+177.0,43.0,Male,Civil Engineering ,Dogs,Black,Brown,Paper,*Incoherent Screaming*,520.0,10.0
+189.0,45.0,Male,Civil Engineering ,Dogs,Blond,Blue,Rock,*Incoherent Screaming*,620.0,12.0
+190.0,43.0,Male,Civil Engineering ,Dogs,Brown,Brown,Rock,Uncertainty,,24.0
+180.0,43.0,Male,"Earth, Climate, and Technology",Cats,Hazel,Blue,Rock,Data,463.0,12.0
+197.0,46.0,Male,Civil Engineering ,Dogs,Brown,Brown,Rock,Data,395.0,13.0
+183.0,44.0,Male,Civil Engineering ,Dogs,Brown,Green,Rock,*Incoherent Screaming*,950.0,100.0
+188.0,44.0,Male,Environmental Engineering,Both?,Brown,Brown,Rock,Modelling,900.0,35.0
+180.0,41.0,Male,"Earth, Climate, and Technology",Cats,Brown,Brown,Rock,Uncertainty,,
+185.0,45.0,Male,Civil Engineering ,Both?,Brown,Brown,Rock,Modelling,695.0,11.0
+196.0,43.0,Male,Civil Engineering ,Cats,Brown,Grey,Rock,Modelling,520.77,6.0
+188.0,43.0,Male,Civil Engineering ,Dogs,Brown,Green,Rock,Modelling,500.0,20.0
+183.0,44.5,Male,Civil Engineering ,Cats,Brown,Brown,Paper,Modelling,1.0,165.0
+170.0,42.0,Male,Civil Engineering ,Cats,Blond,Blue,Paper,Uncertainty,,30.0
+179.0,44.0,Male,Civil Engineering ,Both?,Hazel,Blue,Scissors,*Incoherent Screaming*,400.0,20.0
+206.0,50.0,Male,Civil Engineering ,Cats,Blond,Blue,Scissors,*Incoherent Screaming*,420.0,10.0
+178.0,43.0,Male,Civil Engineering ,Cats,Brown,Brown,Scissors,Data,500.0,30.0
+173.0,39.0,Female,Civil Engineering ,Cats,Brown,Brown,Scissors,Modelling,670.0,
+175.0,39.0,Female,Civil Engineering ,Both?,Blond,Blue,Rock,*Incoherent Screaming*,350.0,97.0
+175.0,42.0,Male,Civil Engineering ,Dogs,Brown,Blue,Rock,*Incoherent Screaming*,,
+182.0,43.0,Female,"Earth, Climate, and Technology",Neither! >:(,Brown,Green,Rock,*Incoherent Screaming*,600.0,22.0
+176.0,40.0,Female,Civil Engineering ,Cats,Blond,Green,Scissors,Data,700.0,
+182.0,42.0,Male,"Earth, Climate, and Technology",Both?,Brown,Blue,Rock,*Incoherent Screaming*,480.0,22.0
+170.0,41.0,Female,Civil Engineering ,Both?,Brown,Brown,Rock,*Incoherent Screaming*,680.0,16.0
+157.0,38.0,Female,"Earth, Climate, and Technology",Both?,Black,Brown,Scissors,Modelling,500.0,6.0
+158.0,39.0,Female,Civil Engineering ,Dogs,Blond,Blue,Paper,Uncertainty,422.0,18.0
+180.0,49.0,Male,Civil Engineering ,Cats,Blond,Blue,Paper,*Incoherent Screaming*,560.0,11.0
+178.0,46.0,Male,Civil Engineering ,Neither! >:(,Black,Brown,Scissors,*Incoherent Screaming*,,
+167.0,39.0,Female,Civil Engineering ,Both?,Blond,Blue,Scissors,*Incoherent Screaming*,,
+171.0,41.0,Female,Civil Engineering ,Both?,Brown,Brown,Paper,Data,870.0,27.0
+150.0,28.0,Male,Environmental Engineering,Both?,Black,Brown,Paper,*Incoherent Screaming*,,
+193.0,42.0,Male,Civil Engineering ,Dogs,Red,Brown,Rock,*Incoherent Screaming*,,22.0
+188.0,47.0,Male,Civil Engineering ,Neither! >:(,Brown,Grey,Rock,Modelling,675.0,25.0
+172.0,39.0,Female,Civil Engineering ,Dogs,Brown,Blue,Scissors,*Incoherent Screaming*,725.0,15.0
+167.0,38.0,Female,Civil Engineering ,Neither! >:(,Blond,Blue,Rock,Modelling,489.0,14.0
+171.0,40.5,Female,Civil Engineering ,Cats,Blond,Blue,Scissors,*Incoherent Screaming*,608.0,31.0
+194.0,46.0,Male,Civil Engineering ,Both?,Brown,Blue,Rock,Modelling,545.0,24.0
+168.0,40.0,Male,Civil Engineering ,Both?,Brown,Brown,Rock,Modelling,515.0,20.0
+170.0,43.0,Male,Civil Engineering ,Both?,Black,Brown,Paper,Modelling,670.0,15.0
+170.0,43.0,Male,Civil Engineering ,Both?,Black,Brown,Rock,*Incoherent Screaming*,600.0,
+191.0,46.0,Male,Civil Engineering ,Dogs,Brown,Blue,Paper,*Incoherent Screaming*,900.0,15.0
+180.0,44.0,Male,Civil Engineering ,Cats,Blond,Grey,Paper,Uncertainty,575.0,9.0
+160.0,37.0,Female,Civil Engineering ,Neither! >:(,Brown,Green,Scissors,Data,450.0,10.0
+165.0,39.0,Female,"Earth, Climate, and Technology",Cats,Black,Brown,Paper,Data,,8.0
+188.0,45.0,Male,Civil Engineering ,Dogs,Black,Brown,Scissors,Data,600.0,1.0
+165.0,39.0,Female,Civil Engineering ,Dogs,Brown,Green,Rock,Data,480.0,
+180.0,42.0,Male,Civil Engineering ,Dogs,Brown,Blue,Paper,Modelling,1.0,
+173.0,43.0,Male,"Earth, Climate, and Technology",Dogs,Blond,Blue,Scissors,Modelling,680.0,
+160.0,36.0,Female,"Earth, Climate, and Technology",Both?,Brown,Brown,Rock,Modelling,500.0,25.0
+189.0,44.0,Male,Civil Engineering ,Both?,Blond,Blue,Scissors,*Incoherent Screaming*,550.0,10.0
+192.0,43.5,Male,Civil Engineering ,Dogs,Blond,Green,Rock,Modelling,380.0,12.0
+180.0,42.0,Male,"Earth, Climate, and Technology",Both?,Brown,Grey,Scissors,Data,420.0,38.0
+192.0,47.0,Male,"Earth, Climate, and Technology",Cats,Brown,Green,Rock,Data,,
+160.0,37.0,Other,Civil Engineering ,Dogs,Brown,Green,Paper,*Incoherent Screaming*,551.0,
+185.0,44.0,Female,Civil Engineering ,Dogs,Blond,Blue,Paper,Modelling,490.0,18.0
+173.0,42.0,Female,Environmental Engineering,Cats,Brown,Brown,Rock,*Incoherent Screaming*,680.0,10.0
+197.0,45.0,Male,Civil Engineering ,Dogs,Brown,Brown,Rock,Uncertainty,0.1,20.0
+184.0,45.0,Male,Civil Engineering ,Cats,Brown,Grey,Rock,Uncertainty,,15.0
+167.0,43.0,Male,"Earth, Climate, and Technology",Dogs,Brown,Brown,Rock,Data,684.0,18.0
+185.0,44.0,Male,"Earth, Climate, and Technology",Cats,Blond,Green,Paper,*Incoherent Screaming*,550.0,25.0
+180.0,45.0,Male,Civil Engineering ,Cats,Black,Brown,Scissors,Uncertainty,,26.0
+182.0,44.0,Male,Environmental Engineering,Both?,Brown,Brown,Scissors,Uncertainty,1100.0,60.0
+180.0,42.0,Male,Civil Engineering ,Cats,Brown,Brown,Rock,*Incoherent Screaming*,,
+180.0,41.0,Female,Civil Engineering ,Both?,Brown,Blue,Paper,Uncertainty,752.0,27.0
+175.0,41.0,Female,Civil Engineering ,Dogs,Blond,Blue,Rock,*Incoherent Screaming*,,
+175.0,43.5,Male,Environmental Engineering,Dogs,Brown,Hazel,Rock,Uncertainty,850.0,80.0
+190.0,43.0,Male,Civil Engineering ,Neither! >:(,Blond,Blue,Paper,Modelling,400.0,15.0
+180.0,43.0,Male,Civil Engineering ,Cats,Brown,Brown,Paper,Data,,
+193.0,46.0,Male,Industrial Engineer/Industrial Chemistry,Dogs,Black,Green,Rock,Modelling,550.0,8.0
+168.0,39.0,Female,Civil Engineering ,Dogs,Brown,Hazel,Rock,Data,1000.0,30.0
+178.0,42.0,Male,Civil Engineering ,Dogs,Brown,Brown,Scissors,*Incoherent Screaming*,290.0,15.0
+165.0,41.0,Male,Environmental Engineering,Dogs,Black,Brown,Rock,Modelling,950.0,
+172.0,40.5,Male,Environmental Engineering,Both?,Black,Brown,Paper,*Incoherent Screaming*,,
+185.0,45.0,Male,Environmental Engineering,Both?,Hazel,Brown,Paper,*Incoherent Screaming*,825.0,20.0
+172.0,41.0,Male,"Earth, Climate, and Technology",Dogs,Black,Brown,Rock,Data,865.0,17.0
+169.0,39.0,Female,"Earth, Climate, and Technology",Cats,Brown,Brown,Rock,*Incoherent Screaming*,660.0,21.0
+182.0,38.0,Male,Civil Engineering ,Dogs,Black,Blue,Scissors,Modelling,866.0,29.0
+183.0,42.0,Male,"Earth, Climate, and Technology",Cats,Blond,Blue,Rock,*Incoherent Screaming*,325.0,12.0
+178.0,43.0,Male,Environmental Engineering,Dogs,Brown,Green,Rock,Data,600.0,20.0
+175.0,40.0,Male,Civil Engineering ,Both?,Black,Brown,Rock,Modelling,592.0,25.0
+171.0,41.0,Male,Environmental Engineering,Both?,Black,Brown,Paper,*Incoherent Screaming*,700.0,19.0
+196.0,43.0,Male,Civil Engineering ,Both?,Hazel,Blue,Rock,Data,400.0,16.0
+170.0,42.0,Male,"Earth, Climate, and Technology",Dogs,Black,Hazel,Scissors,Modelling,860.0,100.0
+188.0,45.0,Male,Environmental Engineering,Neither! >:(,Blond,Green,Rock,Uncertainty,600.0,12.0
+178.0,43.0,Male,Civil Engineering ,Dogs,Blond,Grey,Paper,Modelling,600.0,12.0
+187.0,43.0,Male,Environmental Engineering,Both?,Brown,Green,Rock,*Incoherent Screaming*,261.0,50.0
+186.0,44.0,Male,Civil Engineering ,Cats,Brown,Brown,Rock,Uncertainty,1000.0,25.0
+185.0,32.0,Male,Civil Engineering ,Cats,Brown,Brown,Paper,Modelling,,30.0
+176.0,43.0,Male,Civil Engineering ,Dogs,Brown,Brown,Paper,*Incoherent Screaming*,795.0,23.0
+175.0,39.0,Female,"Earth, Climate, and Technology",Dogs,Black,Brown,Rock,*Incoherent Screaming*,504.0,13.0
+173.0,41.0,Male,Civil Engineering ,Cats,Brown,Green,Scissors,*Incoherent Screaming*,375.0,13.0
