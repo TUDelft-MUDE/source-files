@@ -1,0 +1,18 @@
+---
+config:
+  gitGraph:
+    rotateCommitLabel: true
+---
+gitGraph TB:
+   commit id: "Initial commit (README.md)"
+   commit id: "Add code.py (2 lines)"
+   branch update
+   branch feature
+   checkout update
+   commit id: "Add 3 lines to code.py"
+   checkout feature
+   commit id: "Add 5 lines to code.py"
+   checkout update
+   merge feature id: "Merge feature into update (solving conflict)"
+   checkout main
+   merge update id: "Merge update into main"
